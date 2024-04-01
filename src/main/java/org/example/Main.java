@@ -65,10 +65,15 @@ public class Main {
             return false;
         }
 
+        boolean isExisting = false;
+
         for(int in : list) {
-            return in == digit;
+            if (in == digit) {
+                isExisting = true;
+                break;
+            }
         }
 
-        return false;
+        return isExisting;
     }
 }
