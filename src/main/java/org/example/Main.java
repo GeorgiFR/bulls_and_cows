@@ -18,10 +18,13 @@ public class Main {
             }
         }
 
-        String randomCode = "";
+        StringBuilder stringBuilder = new StringBuilder();
         for (int digit : digits) {
-            randomCode += digit;
+            stringBuilder.append(digit);
         }
+
+        String randomCode = stringBuilder.toString();
+
 
         System.out.println("Write your guess:");
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
